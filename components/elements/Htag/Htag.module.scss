@@ -1,0 +1,38 @@
+.h1 {
+  color: var(--light-text-color);
+  font-family: var(--font-lead);
+  font-size: 48px;
+  line-height: 1em;
+  opacity: 0.7;
+}
+
+.h2 {
+  color: var(--light-text-color);
+  font-family: var(--font-lead);
+  font-size: 32px;
+  line-height: 1.2em;
+  opacity: 0.7;
+}
+
+.h3 {
+  color: var(--light-text-color);
+  font-family: var(--font-lead);
+  font-size: 24px;
+  line-height: 1.3em;
+  opacity: 0.7;
+}
+
+.h4 {
+  color: var(--light-text-color);
+  font-family: var(--font-lead);
+  font-size: 20px;
+  line-height: 1.4em;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 480px) {
+  .h1 {
+    font-size: 38px;
+    line-height: 1em;
+  }
+}

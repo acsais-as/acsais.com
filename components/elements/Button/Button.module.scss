@@ -1,0 +1,81 @@
+// Общие стили для всех кнопок
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+  transition: all 0.3s;
+  min-width: 170px;
+}
+
+// Стили для кнопок в интерфейсах
+// Primary
+
+.primary {
+  color: var(--light-text-color);
+  background-color: var(--primary-color);
+}
+
+.primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+// Secondary
+
+.secondary {
+  color: var(--light-text-color);
+  background-color: var(--second-color);
+}
+
+.secondary:hover {
+  background-color: var(--second-color);
+}
+
+.ghost {
+  color: var(--gray-light);
+  background: none;
+  border: 1px solid var(--second-color);
+}
+
+.ghost:hover {
+  color: var(--gray-light);
+  background: var(--primary-color);
+  border: none;
+}
+
+.link {
+  color: var(--gray-light);
+  background: none;
+  border: none;
+}
+
+.link:hover {
+  color: var(--primary-color);
+  border: none;
+}
+
+// Стилизация стрелки внутри кнопки
+
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.primary svg {
+  fill: var(--gray-light);
+}
+
+.ghost svg {
+  fill: var(--gray-light);
+}

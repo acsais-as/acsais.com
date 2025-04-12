@@ -1,0 +1,26 @@
+.section {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1536px;
+  margin-top: 180px;
+}
+
+@media screen and (max-width: 540px) {
+  .section__container {
+    padding: 20px;
+  }
+}

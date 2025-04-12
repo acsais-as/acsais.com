@@ -1,0 +1,32 @@
+.menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.list__item a {
+  display: inline-block;
+  font-family: var(--font-credits);
+  font-size: 18px;
+  color: var(--black-text-color);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.list__item a:hover {
+  border-bottom: 1px solid var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.list__item:not(:last-child) {
+  margin-right: 48px;
+}

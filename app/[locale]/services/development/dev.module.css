@@ -1,0 +1,171 @@
+.page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page__container {
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1536px;
+}
+
+.page__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.advantages {
+  margin-top: 50px;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.advantages__item {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  border: 1px solid var(--accidental-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.advantages__item:hover {
+  background-color: var(--second-color);
+  color: var(--gray-light);
+  border: none;
+}
+
+.number {
+  text-align: center;
+  font-family: var(--font-lead);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Секция Возможности */
+
+.opportunities {
+  margin-top: 150px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.left {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.right {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.badges {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+/* Адаптивность */
+
+@media screen and (max-width: 1024px) {
+  .page__container {
+    padding: 10px;
+  }
+  .advantages {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .advantages__item {
+    width: 300px;
+    text-align: center;
+  }
+
+  .opportunities {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .left {
+    padding: 10px;
+    width: 50%;
+  }
+  .right {
+    padding: 10px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .opportunities {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .badges {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .opportunities {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}

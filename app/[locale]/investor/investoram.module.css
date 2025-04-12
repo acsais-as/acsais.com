@@ -1,0 +1,96 @@
+.page {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1536px;
+  margin-top: 180px;
+}
+
+.page__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 30px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: first baseline;
+  justify-content: space-around;
+  margin: 10px;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 30px;
+}
+
+.item h3,
+.item p {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.item p {
+  margin-top: 10px;
+}
+
+.social {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  font-family: var(--font-logo);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: rgb(41, 155, 191);
+  text-align: center;
+}
+
+.social_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Адаптивность */
+
+@media screen and (max-width: 1024px) {
+  .page__container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .page__container {
+    padding: 10px;
+  }
+  .social_title {
+    flex-direction: column;
+  }
+}

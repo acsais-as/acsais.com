@@ -1,0 +1,167 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Базовые стили */
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #1e2639;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.7;
+  font-family: var(--font-credits);
+}
+
+/* Стили добавления к body в момент открытия модалок */
+
+.overflow-hidden {
+  position: fixed;
+  overflow: hidden;
+  padding-right: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Стилизация скроллбара */
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2ddad7;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #70f;
+}
+
+/* Конец блока стилизации скроллбара */
+
+:root {
+  /* Основные цвета проекта */
+  --primary-color: #ca1e59;
+  --primary-color-hover: #860f39;
+  --second-color: #006262;
+  --accidental-color: #2ddad7;
+  --light-text-color: #fff;
+  --black-text-color: #4c5866;
+  --gray-light: #ebebeb;
+
+  /* Переменные шрифтов */
+  /* Для логотипа и тега H1 */
+  --font-logo: "luxomona";
+  /* Подзаголовки */
+  --font-lead: "Fira Mono Regular";
+  /* Для текста */
+  --font-credits: "HelveticaLinotype";
+  /* Для интерфейсов */
+  --fira-sans-light: "Fira Sans Light", serif;
+  /* Для цитат */
+  --font-quote: "Fira Sans Italic", serif;
+  /* Для маленького текста */
+  --font-caption: "Fira Sans ExtraLight", serif;
+
+  /* Градиенты */
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+/* Контейнер */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Подключение шрифтов */
+/* Шрифт для логотипа и тега H1 */
+@font-face {
+  font-family: "luxomona", sans-serif;
+  src: url("../../../public/fonts/logo/luxomona.eot");
+  src: local("luxomona"), local("luxomona"),
+    url("../../../public/fonts/logo/luxomona.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../../public/fonts/logo/luxomona.woff") format("woff"),
+    url("../../../public/fonts/logo/luxomona.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Шрифт для подзаголовков */
+
+@font-face {
+  font-family: "Fira Mono Regular", sans-serif;
+  src: url("../../../public/fonts/FiraMono/FiraMono-Regular.eot");
+  src: local("Fira Mono"), local("Fira Mono"),
+    url("../../../public/fonts/FiraMono/FiraMono-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../../public/fonts/FiraMono/FiraMono-Regular.woff") format("woff"),
+    url("../../../public/fonts/FiraMono/FiraMono-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Шрифт для элементов интерфейса */
+@font-face {
+  font-family: "Fira Sans ExtraLight", serif;
+  src: url("../../../public/fonts/Firasanslight/FiraSans-ExtraLight.ttf");
+  src: local("Fira Sans"), local("Fira Sans");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Шрифт для основного текста */
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../../../public/fonts/HelveticaLinotype/HelveticaLinotype-Regular.ttf");
+}
+
+/* Для интерфейсов */
+@font-face {
+  font-family: "Fira Sans Light", serif;
+  src: url("../../../public/fonts/Firasanslight/FiraSans-Light.ttf");
+  src: local("Fira Sans"), local("Fira Sans");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Для цитат */
+@font-face {
+  font-family: "Fira Sans Italic", serif;
+  src: url("../../../public/fonts/Firasanslight/FiraSans-Italic.ttf");
+  src: local("Fira Sans"), local("Fira Sans");
+  font-weight: 400;
+  font-style: normal;
+}

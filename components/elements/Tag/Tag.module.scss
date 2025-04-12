@@ -1,0 +1,85 @@
+// Общие стили тегов
+
+.tag {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 5px;
+  border-radius: 20px;
+  font-family: var(--font-credits);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+// Стиль маленького тега
+
+.s {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+// Стиль среднего тега
+
+.m {
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+// Стиль большого тега
+
+.l {
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+// Задаем цвета тегов
+// Тег без фона с темного цвета шрифтом и границей
+
+.ghost {
+  color: var(--light-text-color);
+  border: 1px solid var(--black-text-color);
+}
+
+.ghost:hover {
+  color: var(--light-text-color);
+  border: 1px solid var(--accidental-color);
+  background-color: var(--accidental-color);
+}
+
+// Тег c красным фоном и белым шрифтом
+
+.red {
+  color: var(--light-text-color);
+  border: none;
+  background: var(--primary-color-hover);
+}
+
+// Тег c серым фоном и белым шрифтом
+
+.grey {
+  color: var(--light-text-color);
+  font-weight: bold;
+  border: none;
+  background: #b3c0d9;
+}
+
+.green {
+  color: #145c14;
+  font-weight: bold;
+  border: none;
+  background: var(--success);
+}
+
+.primary {
+  color: var(--light-text-color);
+  border: none;
+  background: var(--primary-color);
+}
+
+.secondary {
+  color: var(--light-text-color);
+  border: none;
+  background: var(--second-color);
+}

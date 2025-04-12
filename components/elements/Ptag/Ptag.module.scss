@@ -1,0 +1,44 @@
+.p {
+  color: var(--light-text-color);
+  font-family: var(--font-credits);
+  font-size: 18px;
+  line-height: 1.4em;
+  max-width: 75ch;
+  opacity: 0.7;
+}
+
+.p:not(:first-child):not(:last-child) {
+  margin-bottom: 1em;
+}
+
+// Тег <CAPTION> предназначен для создания заголовка к таблице или для текстов небольшого объема
+
+.caption {
+  color: var(--light-text-color);
+  font-family: var(--font-credits);
+  font-size: 12px;
+  line-height: 1.2em;
+  opacity: 0.7;
+}
+
+// Тег <LEAD> предназначен для описания разделов сайта или совместно с тегом H1 как description
+
+.lead {
+  color: var(--light-text-color);
+  font-family: var(--font-credits);
+  font-size: 20px;
+  line-height: 1.4em;
+  max-width: 55ch;
+  opacity: 0.7;
+}
+
+// Тег <CREDITS> предназначен для описания условий использования продуктов или в всплывающей подсказке
+
+.credits {
+  color: var(--light-text-color);
+  font-family: var(--font-credits);
+  font-size: 10px;
+  line-height: 1.1em;
+  max-width: 75ch;
+  opacity: 0.7;
+}
