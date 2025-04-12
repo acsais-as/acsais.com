@@ -1,4 +1,3 @@
-
 import { setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -14,9 +13,7 @@ import Footer from "@/components/modules/Footer/Footer";
 export const metadata: Metadata = {
   title: "Digital Agency Acsais",
   description: "Разаботка комплексных digital решений для бизнеса",
-  manifest: "/web.manifest",
 };
-
 
 export default async function LocaleLayout({
   children,
@@ -33,7 +30,6 @@ export default async function LocaleLayout({
 
   // Enable static rendering
   setRequestLocale(locale);
-
 
   return (
     <html lang={locale} suppressHydrationWarning>

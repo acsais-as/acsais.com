@@ -65,16 +65,6 @@ const AiService = () => {
             </Ptag>
           </div>
           <div className={styles.item}>
-            <Htag tag="h3">{t("service5__title")}</Htag>
-            <ListIcons>{t("service5__item1")}</ListIcons>
-            <ListIcons>{t("service5__item2")}</ListIcons>
-            <ListIcons>{t("service5__item3")}</ListIcons>
-            <ListIcons>{t("service5__item4")}</ListIcons>
-            <Ptag size="lead" className={styles.number}>
-              {t("price")} 35 000 ₽
-            </Ptag>
-          </div>
-          <div className={styles.item}>
             <Htag tag="h3">{t("service6__title")}</Htag>
             <ListIcons>{t("service6__item1")}</ListIcons>
             <ListIcons>{t("service6__item2")}</ListIcons>

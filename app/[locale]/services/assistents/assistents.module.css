@@ -68,7 +68,7 @@
   position: relative;
   display: inline-block;
   margin-top: 20px;
-  font-family: var(--font-logo);
+  font-family: var(--font-lead);
   font-size: 24px;
   font-weight: bold;
   line-height: 1.2em;
@@ -80,7 +80,7 @@
   position: relative;
   display: inline-block;
   margin-top: 20px;
-  font-family: var(--font-logo);
+  font-family: var(--font-lead);
   font-size: 24px;
   font-weight: bold;
   line-height: 1.2em;

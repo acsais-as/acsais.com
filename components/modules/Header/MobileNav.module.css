@@ -68,8 +68,8 @@
 
 .menu {
   position: absolute;
-  left: 50;
-  top: 80;
+  left: 50px;
+  top: 80px;
   right: 0;
   bottom: 0;
   height: 80vh;

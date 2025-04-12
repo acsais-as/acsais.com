@@ -158,7 +158,7 @@
   }
   .card {
     width: 90%;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
