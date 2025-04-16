@@ -31,7 +31,7 @@ const AiService = () => {
             <ListIcons>{t("service1__item2")}</ListIcons>
             <ListIcons>{t("service1__item3")}</ListIcons>
             <Ptag size="lead" className={styles.number}>
-              {t("price")} 5 000 ₽
+              {t("price")} 15 000 ₽
             </Ptag>
           </div>
           <div className={styles.item}>

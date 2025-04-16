@@ -3,6 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
+
 // Стили
 import "@/app/[locale]/globalStyles/normalize.css";
 import "@/app/[locale]/globalStyles/globals.css";
